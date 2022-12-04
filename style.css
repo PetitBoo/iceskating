@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 1440px;
+}
+
+header {
+    display: flex;
+    flex-flow: wrap;
+    flex-basis: auto;
+    position: sticky;
+    background-color: #99ccee;
+    padding: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 0px;
+}
+
+header a {
+    color: #5577aa;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+header a:hover {
+    background-color: #eeeeee;
+    color: #5577aa;
+}
+
+.logo {
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    background: url('/blocks/images/logo.svg') left no-repeat;
+    background-size: contain;
+    filter: invert(100%) sepia(0%) saturate(154%) hue-rotate(100deg) brightness(102%) contrast(90%);
+}
+
+.logoa {
+    margin-right: auto;
+    background: transparent;
+}
+
+.logoa:hover {
+    margin-right: auto;
+    background: transparent;
+}
+
+.first_text {
+    color: #eeeeee;
+    font-family: 'Orelega One', serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding-top: 590px;
+    text-align: center;
+    width: 100%;
+}
+
+.first_img {
+    width: 100%;
+    height: 800px;
+    background: url('/blocks/images/iceskate.jpg') bottom no-repeat;
+    background-size: cover;
+}
+
+.wlcm {
+    padding: 100px 50px 150px;
+    text-align: center;
+    background-color: #eeeeff;
+    font-size: 24px;
+    color: #3b3b3b;
+    line-height: 1.5;
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    background-color: #99ccee;
+}
+
+.elems {
+    display: flex;
+    flex-flow: wrap;
+    flex-basis: auto;
+    margin-top: 0px;
+    gap: 90px;
+    justify-content: center;
+    background-color: #99ccee;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 160px;
+    border-radius: 20px;
+    width: 380px;
+    max-height: 700px;
+    background-color: #eeeeff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.element:hover {
+    transform: scale(1.1) translateX(3px);
+}
+
+.element_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.element_text {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    color: #706f6f;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.element_name {
+    font-family: 'Orelega One';
+    font-size: 25px;
+    color: #68689a;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+#more {
+    display: none;
+}
+
+.btn {
+    background-color: #99ccee;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px;
+    cursor: pointer;
+    background-color: #eeeeff;
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5577aa;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+button:hover {
+    transform: scale(1.2) translateX(8px);
+}
+
+.box {
+    margin-top: 0px;
+    background-color: #eeeeff;
+}
+
+.article {
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #eeeeff;
+}
+
+.article h3 {
+    text-align: left;
+    font-family: Inter;
+    color: #68689a;
+    font-size: 32px;
+}
+
+#date {
+    font-family: Inter;
+    font-size: 16px;
+    text-align: right;
+    color: #706f6f;
+}
+
+#text {
+    font-family: Inter;
+    font-size: 18px;
+    text-align: justify;
+    color: #3b3b3b;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #99ccee;
+    color: #5577aa;
+    text-align: center;
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+}
+
+.footimg {
+    max-width: 1440px;
+    height: 100px;
+    background: url('/blocks/images/foot1.svg') center no-repeat;
+    background-size: contain;
+    filter: invert(100%) sepia(0%) saturate(154%) hue-rotate(100deg) brightness(102%) contrast(90%);
+}
+
+.slider{
+    max-width: 100%;
+    background-color: #eeeeff;
+    position: relative;
+    margin: auto;
+    height: 900px;
+}
+
+.slider .sldimg img {
+    object-fit: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.slider .sldimg {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
